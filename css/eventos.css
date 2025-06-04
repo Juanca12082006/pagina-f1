@@ -1,0 +1,251 @@
+:root {
+            --f1-red: #e10600;
+            --f1-black: #000000;
+            --f1-dark: #1e1e1e;
+            --f1-light: #ffffff;
+            --f1-gray: #333333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Titillium Web', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: var(--f1-dark);
+            color: var(--f1-light);
+            line-height: 1.6;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--f1-black);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--f1-red);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            height: 50px;
+            margin-right: 1rem;
+        }
+        
+        .header-title {
+            color: var(--f1-light);
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .f1-red {
+            color: var(--f1-red);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 1.5rem;
+        }
+        
+        nav a {
+            color: var(--f1-light);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--f1-red);
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--f1-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 3px;
+            background-color: var(--f1-red);
+        }
+        
+        /* Upcoming Events */
+        .upcoming-events {
+            margin-bottom: 4rem;
+        }
+        
+        .event-card {
+            background-color: var(--f1-gray);
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            display: flex;
+            transition: transform 0.3s ease;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .event-date {
+            background-color: var(--f1-red);
+            color: var(--f1-light);
+            padding: 1.5rem;
+            min-width: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .event-day {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        
+        .event-month {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+        
+        .event-info {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+        
+        .event-name {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--f1-red);
+        }
+        
+        .event-location {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .event-location i {
+            margin-right: 0.5rem;
+        }
+        
+        /* Completed Races */
+        .completed-races table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        
+        .completed-races th {
+            background-color: var(--f1-red);
+            color: var(--f1-light);
+            padding: 1rem;
+            text-align: left;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        
+        .completed-races td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--f1-gray);
+        }
+        
+        .completed-races tr:nth-child(even) {
+            background-color: rgba(255,255,255,0.05);
+        }
+        
+        .completed-races tr:hover {
+            background-color: rgba(225,6,0,0.1);
+        }
+        
+        .winner {
+            font-weight: 600;
+            color: var(--f1-red);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--f1-black);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+            border-top: 1px solid var(--f1-gray);
+        }
+        
+        .footer-logo {
+            height: 40px;
+            margin-bottom: 1rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin: 1rem 0;
+        }
+        
+        .social-links a {
+            color: var(--f1-light);
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--f1-red);
+        }
+        
+        .copyright {
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
