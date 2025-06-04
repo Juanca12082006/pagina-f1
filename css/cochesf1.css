@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #cc0000; /* Rojo Ferrari */
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(204, 0, 0, 0.4); /* Sutil reflejo rojo */
+}
+
+.car {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 3px solid #cc0000; /* Detalles en rojo */
+    background-color: #ffe6e6; /* Rojo suave */
+    border-radius: 8px;
+}
+
+.car img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 2px solid #cc0000; /* Borde rojo */
+}
+
+h2 {
+    color: #990000; /* Rojo oscuro para resaltar */
+}
+
+p {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #cc0000; /* Rojo Ferrari */
+    color: white;
+    font-weight: bold;
+}
