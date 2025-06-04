@@ -1,0 +1,48 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    background-color:white; 
+    color: #B00000; /* Color de texto principal (rojo oscuro) */
+    font-family: Arial, sans-serif; /* Fuente principal */
+    margin: 0; 
+    padding: 0; 
+}
+
+
+/* Estilos para los títulos */
+h3, h4 {
+    margin-top: 0; 
+    color: white; 
+    text-align: center; /* Centra los títulos */
+    background-color: #FF1801; /* Fondo rojo para los títulos */
+    padding: 20px 0; /* Espaciado interno arriba y abajo */
+    border-radius: 0px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Estilos para los párrafos */
+p {
+    max-width: 800px; /* Ancho máximo del párrafo */
+    margin: 20px auto; /* Centra el párrafo y agrega margen vertical */
+    font-size: 1.1em; 
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Estilos para las imágenes */
+img {
+    margin: 10px; /* Espaciado alrededor de la imagen */
+    border: 3px solid #FF1801; /* Borde rojo */
+    border-radius: 8px;
+    transition: transform 0.5s, box-shadow 0.5s; /* Transición suave */
+}
+
+/* Efecto al pasar el mouse */
+img:hover {
+    transform: scale(1.08); /* Aumenta el tamaño */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3); /* Sombra más pronunciada */
+}
+
+/* Estilos para la galería de imágenes */
+.galeria {
+    text-align: center; /* Centra el contenido de la galería */
+    margin-top: 20px; /* Espaciado superior */
+}
